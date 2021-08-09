@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>datav library example </title>
+  <!-- 这里组件加载不出来切换下vue的版本 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.1.5/dist/vue.global.js"></script>
+  <script src="../dist/datav.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    {{message}}
+    <test-component></test-component>
+  </div>
+
+  <script>
+    Vue.createApp({
+      setup() {
+        var message = 'hello world!'
+        return {
+          message
+        }
+      }
+    }).use(Datav).mount('#app')
+  </script>
+</body>
+
+</html>
