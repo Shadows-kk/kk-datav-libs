@@ -8,7 +8,7 @@
 export default {
   name: 'TestComponent3',
   setup () {
-    const message = 'hello world3 '
+    const message = 'hello world3'
     return {
       message
     }

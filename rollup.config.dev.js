@@ -24,7 +24,7 @@ module.exports = {
     //必须指定模块名称
     name: 'Datav',
     globals: {
-      vue: 'vue'
+      vue: 'Vue'
     }
 
   }, {
@@ -35,7 +35,7 @@ module.exports = {
     //必须指定模块名称
     name: 'Datav',
     globals: {
-      vue: 'vue'
+      vue: 'Vue'
     }
   }],
   plugins: [

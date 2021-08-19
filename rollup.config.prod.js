@@ -25,7 +25,7 @@ module.exports = {
     //必须指定模块名称
     name: 'Datav',
     globals: {
-      vue: 'vue'
+      vue: 'Vue'
     }
   }, {
     //输出路径
@@ -35,7 +35,7 @@ module.exports = {
     //必须指定模块名称
     name: 'Datav',
     globals: {
-      vue: 'vue'
+      vue: 'Vue'
     }
   }],
   plugins: [
@@ -53,5 +53,5 @@ module.exports = {
     //压缩文件
     terser()
   ],
-  external: ['']
+  external: ['Vue']
 }

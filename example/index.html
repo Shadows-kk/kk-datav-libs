@@ -7,14 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>datav library example </title>
   <!-- 这里组件加载不出来切换下vue的版本 -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@3.1.5/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.1/dist/vue.global.js"></script>
   <script src="../dist/datav.js"></script>
+  <style>
+    html {
+      /* background-color: #2c3e50; */
+    }
+
+    #app {
+      font-family: Avenir, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      color: #2c3e50;
+    }
+  </style>
 </head>
 
 <body>
   <div id="app">
-    {{message}}
+    <!-- {{message}}
     <test-component></test-component>
+    <sange-icon name="arrow" :style="{width:30,height: 30,color:'purple'}"></sange-icon> -->
+    <svg-animation></svg-animation>
   </div>
 
   <script>
