@@ -1,10 +1,6 @@
 <template>
   <div class="loading">
-    <svg
-      :width="width"
-      :height="height"
-      viewBox="0 0 50 50"
-    >
+    <svg :width="width" :height="height" viewBox="0 0 50 50">
       <circle
         cx="25"
         cy="25"
@@ -62,44 +58,54 @@
 </template>
 
 <script>
-import { computed } from 'vue'
+import { computed } from "vue";
 export default {
   name: "Loading",
   props: {
     width: {
       type: [Number, String],
-      default: "50"
+      default: "50",
     },
     height: {
       type: [Number, String],
-      default: "50"
+      default: "50",
     },
     outsideColor: {
       type: String,
-      default: "#FF6700"
+      default: "#3be6cb",
     },
     insideColor: {
       type: String,
-      default: "#FF9600"
+      default: "#02bcfe",
     },
     duration: {
       type: [Number, String],
-      default: 1.5
-    }
+      default: 1.5,
+    },
   },
-  setup (ctx) {
-    const outsideColorAnimate = computed(() => `${ctx.outsideColor};${ctx.insideColor};${ctx.outsideColor}`)
-    const insideColorAnimate = computed(() => `${ctx.insideColor};${ctx.outsideColor};${ctx.insideColor}`)
+  setup(ctx) {
+    const outsideColorAnimate = computed(
+      () => `${ctx.outsideColor};${ctx.insideColor};${ctx.outsideColor}`
+    );
+    const insideColorAnimate = computed(
+      () => `${ctx.insideColor};${ctx.outsideColor};${ctx.insideColor}`
+    );
     return {
       outsideColorAnimate,
-      insideColorAnimate
-    }
-  }
-}
+      insideColorAnimate,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .loading-content {
-  color: purple;
+  color: #fff;
+}
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

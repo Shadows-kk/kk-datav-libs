@@ -44,12 +44,16 @@ module.exports = {
     commonjs(),
     babel({
       //不需要进行babel编译的文件
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
+      runtimeHelpers: true,
+      plugins: [
+        ["@babel/transform-runtime",{ "regenerator": true,}]
+      ]
     }),
     json(),
     postcss({
       plugins: []
     })
   ],
-  external: ['vue']
+  external: ['vue', 'echarts']
 }

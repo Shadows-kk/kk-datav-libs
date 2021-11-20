@@ -7,6 +7,11 @@ import Loading from './components/loading/index'
 import Loading2 from './components/loading2/index'
 import Loading3 from './components/loading3/index'
 import Loading4 from './components/loading4/index'
+import flyBox from './components/flyBox/index'
+import Container from './components/container/index'
+import VueCountTo from './components/VueCountTo/index'
+import VueEcharts from './components/VueEcharts/index'
+import BaseScrollList from './components/BaseScrollList/index'
 export default function (Vue) {
   Vue.use(Test)
   Vue.use(Test2)
@@ -17,4 +22,9 @@ export default function (Vue) {
   Vue.use(Loading2)
   Vue.use(Loading3)
   Vue.use(Loading4)
+  Vue.use(flyBox)
+  Vue.use(Container)
+  Vue.use(VueCountTo)
+  Vue.use(VueEcharts)
+  Vue.use(BaseScrollList)
 }
