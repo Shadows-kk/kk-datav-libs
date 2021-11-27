@@ -1,6 +1,6 @@
 {
   "name": "kk-datav-libs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "datav conponents library",
   "main": "dist/datav.js",
   "scripts": {
