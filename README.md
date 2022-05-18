@@ -16,9 +16,11 @@
 
 1.  main.js 中引入
 
+```
 import datav from kk-datav-libs 
 
 app.use(datav)
+```
 
 #### 参与贡献
 
